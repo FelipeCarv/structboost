@@ -1,0 +1,50 @@
+.btn-primary{
+    padding: 1rem 1.5rem;
+    background-color: var(--pink-10);
+    color: var(--gray-900);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.48px;
+    transition: .3s ease;
+}
+
+.btn-primary.lg{
+    font-size: 1.125rem;
+    padding: 1.4375rem 1.5rem;
+}
+
+.btn-primary.lg.white{
+    background-color: white;
+}
+
+.btn-primary.lg.white:hover{
+    background-color: var(--gray-900);
+    color: white;
+}
+
+.btn-primary:hover{
+    background-color: var(--pink-20);
+}
+
+.item-digital{
+    flex-grow: 1;
+    max-width: 24rem;
+}
+
+.item-digital .icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.item-digital .info h6{
+    margin-bottom: .5rem;
+}
+
+.item-digital .info p{
+    color: var(--gray-600);
+}
