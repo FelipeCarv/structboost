@@ -1,13 +1,9 @@
-.body{
-}
-
 header{
     width: 100%;
     height: 5.5rem;
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.24);
-
 }
 
 
@@ -38,4 +34,71 @@ header nav ul li a{
 
 header nav ul li a:hover{
     opacity: .7;
+}
+
+.s-hero{
+    width: 100%;
+    padding-top: 7.0625rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.s-hero::after{
+    content: '';
+    width: 100%;
+    height: 13.75rem;
+    background-color: var(--pink-10);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.s-hero .text{
+    position: relative;
+    width: 100%;
+    max-width: 44.9375rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.s-hero .text h1{
+    position: relative;
+    letter-spacing: -1.68px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.s-hero .text h1::before{
+    content: '';
+    width: 100%;
+    max-width: 37.4375rem;
+    height: 1.375rem;
+    background: url('/img/line-title.svg') no-repeat center center;
+    position: absolute;
+    bottom: -0.3125rem;
+    left: 2.4375rem;
+    z-index: -1;
+}
+
+.s-hero .text p{
+    color: var(--gray-300);
+    letter-spacing: -0.54px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 34.75rem;
+}
+
+.s-hero .text .arrow{
+    position: absolute;
+    bottom: 1.0625rem;
+    left: 3.4375rem;
+}
+
+.s-hero .ilustra{
+    padding: 0 .9375rem;
 }
