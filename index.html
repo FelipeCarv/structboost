@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
@@ -31,7 +32,7 @@
     
     <section class="s-hero">
         <div class="container">
-            <div class="text">
+            <div class="text" data-aos="fade-right">
                 <h1>Front-end descomplicado e direto ao ponto!</h1>
                 <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.</p>
                 <button class="btn-primary lg">Fazer parte da lista de espera</button>
@@ -39,16 +40,16 @@
             </div>
         </div>
 
-        <img src="/img/Dekstop.png"  class="ilustra" alt="">
-        <img src="/img/Mobile.png" class="ilustra-mobile" alt="" srcset="">
+        <img src="/img/Dekstop.png"  class="ilustra" data-aos="fade-up" data-aos-delay="200" alt="">
+        <img src="/img/Mobile.png" class="ilustra-mobile" data-aos="fade-up" data-aos-delay="200" alt="" srcset="">
     </section>
 
     <section class="s-digital">
         <div class="container">
-            <h3>Transformando Ideias em Realidade Digital!</h3>
+            <h3 data-aos="fade-right">Transformando Ideias em Realidade Digital!</h3>
 
             <ul>
-                <li>
+                <li data-aos="fade-right">
                     <div class="item-digital">
                         <div class="icon">
                             <img src="/img/Group.png" alt="">
@@ -60,7 +61,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up">
                     <div class="item-digital">
                         <div class="icon">
                             <img src="/img/Laptop, Mobile.png" alt="">
@@ -72,7 +73,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-left">
                     <div class="item-digital">
                         <div class="icon">
                             <img src="/img/search-graph.png" alt="">
@@ -91,17 +92,17 @@
     <section class="s-art-front">
         <div class="container">
             <div class="title-text">
-                <div class="left">
+                <div class="left" data-aos="fade-right">
                     <h3>Domine a Arte da Front-end</h3>
                     <p>Prepare-se para criar interfaces incríveis e funcionais para a web com este curso completo de front-end.</p>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-left">
                     <p>Junte-se a nós neste curso de front-end e embarque em uma jornada emocionante para se tornar um desenvolvedor web altamente qualificado.</p>
                 </div>
             </div>
 
-            <div class="all">
-                <div class="card-post">
+            <div class="all" >
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Fundamentos</span>
                     <div class="image">
                         <img src="/img/Vector.png" alt="">
@@ -111,7 +112,7 @@
                         <p>Aprena a usar a mais recente versão do HTML e crie páginas web bem estruturadas e otimizadas para os mecanismos de busca.</p>
                     </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Fundamentos</span>
                     <div class="image">
                         <img src="/img/Vector.png" alt="">
@@ -121,7 +122,7 @@
                         <p>Aprena a usar a mais recente versão do HTML e crie páginas web bem estruturadas e otimizadas para os mecanismos de busca.</p>
                     </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Fundamentos</span>
                     <div class="image">
                         <img src="/img/Vector.png" alt="">
@@ -131,7 +132,7 @@
                         <p>Aprena a usar a mais recente versão do HTML e crie páginas web bem estruturadas e otimizadas para os mecanismos de busca.</p>
                     </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Fundamentos</span>
                     <div class="image">
                         <img src="/img/Vector.png" alt="">
@@ -141,7 +142,7 @@
                         <p>Aprena a usar a mais recente versão do HTML e crie páginas web bem estruturadas e otimizadas para os mecanismos de busca.</p>
                     </div>
                 </div>
-                <div class="card-post">
+                <div class="card-post" data-aos="flip-left">
                     <span class="tag">Fundamentos</span>
                     <div class="image">
                         <img src="/img/Vector.png" alt="">
@@ -156,7 +157,7 @@
     </section>
 
     <section class="s-newsletter">
-        <div class="container">
+        <div class="container" data-aos="zoom-out">
             <h2>Front-end descomplicado e direto ao ponto!</h2>
             <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.</p>
             <button class="btn-primary lg white">Fazer parte da lista de espera</button>
@@ -221,5 +222,13 @@
             <p class="copy">2023 © Todos os direitos reservados. Codeboost</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            disable: 'mobile'
+        });
+      </script>
 </body>
 </html>
