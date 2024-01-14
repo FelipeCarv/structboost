@@ -584,4 +584,14 @@ footer  .copy{
         font-size: 1.125rem;
         max-width: 20rem;
     }
+
+    .imgs{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .s-newsletter h2{
+        font-size: 2rem;
+    }
 }
